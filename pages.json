@@ -34,7 +34,7 @@
 		{
 			"path": "pages/login/index",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "神领快递",
 				"enablePullDownRefresh": false
 			}
 		},
