@@ -41,7 +41,7 @@
 		{
 			"path": "pages/message/index",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "消息",
 				"enablePullDownRefresh": false
 			}
 		},
@@ -74,6 +74,14 @@
 				}
 			}
 		]
+	}, {
+		"root": "subpkg_message",
+		"pages": [{
+			"path": "content/index",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}]
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

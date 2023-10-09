@@ -22,3 +22,6 @@ export const getTask = (data) => {
 };
 
 // 获取车辆信息
+export const getTruck = () => {
+	return uniFetch.get('/driver/users/truck');
+};
