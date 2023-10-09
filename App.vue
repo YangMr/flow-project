@@ -17,4 +17,7 @@ export default {
 
 /* 引入iconfont字体图标 */
 @import '@/common/iconfont/iconfont.scss';
+
+/*引入公共样式*/
+@import '@/common/css/commom.scss';
 </style>

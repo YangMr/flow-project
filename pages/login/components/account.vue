@@ -2,13 +2,25 @@
 import { ref } from 'vue';
 import { login } from '@/api/user.js';
 import { useUserStore } from '@/stores/user.js';
+import { onLoad } from '@dcloudio/uni-app';
+
 const store = useUserStore();
 
 const accountForm = ref();
 
+// 回跳地址
+const redirectURL = ref('');
+// 跳转地址方式
+const routeType = ref('');
+
 const formData = ref({
 	account: '',
 	password: ''
+});
+
+onLoad((e) => {
+	redirectURL.value = e.redirectUrl;
+	routeType.value = e.routeType;
 });
 
 const accountRules = ref({
@@ -47,7 +59,12 @@ const onFormSubmit = async () => {
 		const res = await login(formData);
 
 		// 存储token
-		store.token = res.data;
+		if (res.data) store.token = res.data;
+
+		// 跳转到token过期前的页面
+		uni[routeType.value]({
+			url: redirectURL.value
+		});
 	} catch (e) {
 		// 验证失败
 		console.log('e', e);

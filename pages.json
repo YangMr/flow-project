@@ -48,11 +48,33 @@
 		{
 			"path": "pages/my/index",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
 				"enablePullDownRefresh": false
 			}
 		}
 	],
+	"subPackages": [{
+		"root": "subpkg_user",
+		"pages": [{
+				"path": "truck/index",
+				"style": {
+					"navigationBarTitleText": "车辆信息"
+				}
+			},
+			{
+				"path": "task/index",
+				"style": {
+					"navigationBarTitleText": "任务数据"
+				}
+			},
+			{
+				"path": "settings/index",
+				"style": {
+					"navigationBarTitleText": "系统设置"
+				}
+			}
+		]
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "神领物流",
