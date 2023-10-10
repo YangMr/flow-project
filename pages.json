@@ -27,7 +27,7 @@
 		{
 			"path": "pages/task/index",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
 				"enablePullDownRefresh": false
 			}
 		},
@@ -54,35 +54,53 @@
 		}
 	],
 	"subPackages": [{
-		"root": "subpkg_user",
-		"pages": [{
-				"path": "truck/index",
-				"style": {
-					"navigationBarTitleText": "车辆信息"
+			"root": "subpkg_user",
+			"pages": [{
+					"path": "truck/index",
+					"style": {
+						"navigationBarTitleText": "车辆信息"
+					}
+				},
+				{
+					"path": "task/index",
+					"style": {
+						"navigationBarTitleText": "任务数据"
+					}
+				},
+				{
+					"path": "settings/index",
+					"style": {
+						"navigationBarTitleText": "系统设置"
+					}
 				}
-			},
-			{
-				"path": "task/index",
+			]
+		},
+		{
+			"root": "subpkg_message",
+			"pages": [{
+				"path": "content/index",
 				"style": {
-					"navigationBarTitleText": "任务数据"
+					"navigationBarTitleText": "详情"
 				}
-			},
-			{
-				"path": "settings/index",
-				"style": {
-					"navigationBarTitleText": "系统设置"
+			}]
+		},
+		{
+			"root": "subpkg_task",
+			"pages": [{
+					"path": "pickup/index",
+					"style": {
+						"navigationBarTitleText": "提货信息"
+					}
+				},
+				{
+					"path": "detail/index",
+					"style": {
+						"navigationBarTitleText": "任务详情"
+					}
 				}
-			}
-		]
-	}, {
-		"root": "subpkg_message",
-		"pages": [{
-			"path": "content/index",
-			"style": {
-				"navigationBarTitleText": "详情"
-			}
-		}]
-	}],
+			]
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "神领物流",
