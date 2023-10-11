@@ -97,6 +97,30 @@
 					"style": {
 						"navigationBarTitleText": "任务详情"
 					}
+				},
+				{
+					"path": "delay/index",
+					"style": {
+						"navigationBarTitleText": "延迟提货"
+					}
+				},
+				{
+					"path": "delivery/index",
+					"style": {
+						"navigationBarTitleText": "支付"
+					}
+				},
+				{
+					"path": "except/index",
+					"style": {
+						"navigationBarTitleText": "异常上报"
+					}
+				},
+				{
+					"path": "record/index",
+					"style": {
+						"navigationBarTitleText": "回车登记"
+					}
 				}
 			]
 		}

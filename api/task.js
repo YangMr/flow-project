@@ -24,6 +24,9 @@ export const taskDetail = (jobId) => {
 };
 
 // 延迟提货
+export const delay = (data) => {
+	return uniFetch.put('/driver/tasks/delay', data);
+};
 
 // 联系调度中心
 

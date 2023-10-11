@@ -110,7 +110,9 @@ onLoad((e) => {
 		</scroll-view>
 
 		<view class="toolbar" v-if="detailInfo.status === 1">
-			<navigator :url="`/subpkg_task/delay/index`" hover-class="none" class="button secondary">延迟提货</navigator>
+			<navigator :url="`/subpkg_task/delay/index?id=${detailInfo.id}&planDepartureTime=${detailInfo.planDepartureTime}`" hover-class="none" class="button secondary">
+				延迟提货
+			</navigator>
 			<navigator :url="`/subpkg_task/pickup/index?id=${taskDetail.id}`" hover-class="none" class="button primary">提货</navigator>
 		</view>
 		<view class="toolbar" v-if="detailInfo.status === 2">
