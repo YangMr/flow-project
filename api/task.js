@@ -19,6 +19,9 @@ export const deliver = (data) => {
 };
 
 // 任务详情
+export const taskDetail = (jobId) => {
+	return uniFetch.get(`/driver/tasks/details/${jobId}`);
+};
 
 // 延迟提货
 
