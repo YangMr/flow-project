@@ -107,7 +107,7 @@
 				{
 					"path": "delivery/index",
 					"style": {
-						"navigationBarTitleText": "支付"
+						"navigationBarTitleText": "交货信息"
 					}
 				},
 				{

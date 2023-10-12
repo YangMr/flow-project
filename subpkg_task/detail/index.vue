@@ -66,7 +66,7 @@ onLoad((e) => {
 						</view>
 
 						<!-- 待提货展示数据 -->
-						<template v-if="detailInfo.status === 1">
+						<template v-if="detailInfo.status >= 1">
 							<view class="info-list-item">
 								<text class="label">联系人</text>
 								<text class="value">{{ detailInfo.startHandoverName }}</text>
@@ -85,8 +85,10 @@ onLoad((e) => {
 							</view>
 						</template>
 
+						<view class="hr"></view>
+
 						<!-- 在途展示数据 -->
-						<tempate v-if="detailInfo.status === 2">
+						<tempate v-if="detailInfo.status >= 2">
 							<view class="info-list-item">
 								<text class="label">交付联系人</text>
 								<text class="value">{{ detailInfo.finishHandoverName }}</text>
@@ -113,11 +115,11 @@ onLoad((e) => {
 			<navigator :url="`/subpkg_task/delay/index?id=${detailInfo.id}&planDepartureTime=${detailInfo.planDepartureTime}`" hover-class="none" class="button secondary">
 				延迟提货
 			</navigator>
-			<navigator :url="`/subpkg_task/pickup/index?id=${taskDetail.id}`" hover-class="none" class="button primary">提货</navigator>
+			<navigator :url="`/subpkg_task/pickup/index?id=${detailInfo.id}`" hover-class="none" class="button primary">提货</navigator>
 		</view>
 		<view class="toolbar" v-if="detailInfo.status === 2">
 			<navigator :url="`/subpkg_task/except/index`" hover-class="none" class="button secondary">异常上报</navigator>
-			<navigator :url="`/subpkg_task/delivery/index`" hover-class="none" class="button primary">支付</navigator>
+			<navigator :url="`/subpkg_task/delivery/index?id=${detailInfo.id}`" hover-class="none" class="button primary">交付</navigator>
 		</view>
 		<view class="toolbar" v-if="detailInfo.status === 4">
 			<navigator :url="`/subpkg_task/record/index`" hover-class="none" class="button primary block">回车登记</navigator>
