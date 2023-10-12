@@ -118,7 +118,7 @@ onLoad((e) => {
 			<navigator :url="`/subpkg_task/pickup/index?id=${detailInfo.id}`" hover-class="none" class="button primary">提货</navigator>
 		</view>
 		<view class="toolbar" v-if="detailInfo.status === 2">
-			<navigator :url="`/subpkg_task/except/index`" hover-class="none" class="button secondary">异常上报</navigator>
+			<navigator :url="`/subpkg_task/except/index?transportTaskId=${detailInfo.transportTaskId}`" hover-class="none" class="button secondary">异常上报</navigator>
 			<navigator :url="`/subpkg_task/delivery/index?id=${detailInfo.id}`" hover-class="none" class="button primary">交付</navigator>
 		</view>
 		<view class="toolbar" v-if="detailInfo.status === 4">
