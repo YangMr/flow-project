@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "pickup": "./components/pickup",
+    "delivery": "./components/delivery",
+    "complete": "./components/complete"
+  }
+}

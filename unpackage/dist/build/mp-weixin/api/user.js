@@ -1,0 +1,1 @@
+"use strict";const e=require("./uni-fetch.js");exports.getProfile=()=>e.uniFetch.get("/driver/users"),exports.getTask=r=>{if(r.month&&r.year)return e.uniFetch.get("/driver/users/taskReport",r)},exports.getTruck=()=>e.uniFetch.get("/driver/users/truck"),exports.login=r=>{if(r.account&&r.password)return e.uniFetch.post("/driver/login/account",r)};

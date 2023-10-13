@@ -1,0 +1,1 @@
+import{a as s}from"./uni-fetch.7884c55d.js";const t=t=>s.get("/driver/tasks/list",t),r=t=>s.post("/driver/tasks/takeDelivery",t),e=t=>s.post("/driver/tasks/deliver",t),a=t=>s.get(`/driver/tasks/details/${t}`),i=t=>s.put("/driver/tasks/delay",t),d=t=>s.post("/driver/tasks/reportException",t);export{a,e as b,i as d,t as g,d as r,r as t};

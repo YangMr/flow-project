@@ -33,8 +33,11 @@ export const reportException = (data) => {
 	return uniFetch.post('/driver/tasks/reportException', data);
 };
 
+// 回车登记
+export const truckRegistration = (data) => {
+	return uniFetch.post('/driver/tasks/truckRegistration', data);
+};
+
 // 联系调度中心
 
 // 条件查询货物信息列表
-
-// 回车登记

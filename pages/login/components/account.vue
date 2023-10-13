@@ -62,9 +62,18 @@ const onFormSubmit = async () => {
 		if (res.data) store.token = res.data;
 
 		// 跳转到token过期前的页面
-		uni[routeType.value]({
-			url: redirectURL.value
-		});
+		// uni[routeType.value]({
+		// 	url: redirectURL.value
+		// });
+		if (routeType.value === 'switchTab') {
+			uni.switchTab({
+				url: redirectURL.value
+			});
+		} else {
+			uni.redirectTo({
+				url: redirectURL.value
+			});
+		}
 	} catch (e) {
 		// 验证失败
 		console.log('e', e);

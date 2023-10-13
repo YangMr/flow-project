@@ -1,0 +1,1 @@
+import{o as e,c as a,w as r,g as s,e as t}from"./index-3a6de0df.js";import{_ as o}from"./_plugin-vue_export-helper.1b428a4d.js";const n=o({data:()=>({})},[["render",function(o,n,u,i,l,p){const d=s;return e(),a(d,null,{default:r((()=>[t("任务数据")])),_:1})}]]);export{n as default};

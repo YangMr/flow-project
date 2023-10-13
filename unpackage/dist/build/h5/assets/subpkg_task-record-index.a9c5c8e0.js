@@ -1,0 +1,1 @@
+import{o as e,c as r,w as s,g as o,e as t}from"./index-3a6de0df.js";import{_ as a}from"./_plugin-vue_export-helper.1b428a4d.js";const n=a({},[["render",function(a,n){const u=o;return e(),r(u,null,{default:s((()=>[t("回车登记")])),_:1})}]]);export{n as default};
