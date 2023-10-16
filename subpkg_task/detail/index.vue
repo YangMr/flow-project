@@ -122,7 +122,7 @@ onLoad((e) => {
 			<navigator :url="`/subpkg_task/delivery/index?id=${detailInfo.id}`" hover-class="none" class="button primary">交付</navigator>
 		</view>
 		<view class="toolbar" v-if="detailInfo.status === 4">
-			<navigator :url="`/subpkg_task/record/index?id=${detailInfo.id}&startTime=${detailInfo.actualDepartureTime}`" hover-class="none" class="button primary block">
+			<navigator :url="`/subpkg_task/record/index?id=${detailInfo.transportTaskId}&startTime=${detailInfo.actualDepartureTime}`" hover-class="none" class="button primary block">
 				回车登记
 			</navigator>
 		</view>

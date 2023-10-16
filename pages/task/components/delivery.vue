@@ -92,7 +92,7 @@ const onRefresh = async () => {
 					<view>{{ item.planDepartureTime }}</view>
 				</view>
 				<navigator v-if="item.status === 2" class="action" :url="`/subpkg_task/delivery/index?id=${item.id}`">交付</navigator>
-				<navigator v-if="item.status === 4" class="action" :url="`/subpkg_task/record/index?id=${item.id}&startTime=${item.actualDepartureTime}`">回车登记</navigator>
+				<navigator v-if="item.status === 4" class="action" :url="`/subpkg_task/record/index?id=${item.transportTaskId}&startTime=${item.actualDepartureTime}`">回车登记</navigator>
 			</view>
 		</view>
 
